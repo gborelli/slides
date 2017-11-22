@@ -1,0 +1,7 @@
+.DS_Store
+/monitor
+/node_modules
+/build
+npm-debug.log
+*.log
+

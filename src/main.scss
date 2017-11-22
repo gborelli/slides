@@ -1,0 +1,62 @@
+@import '~reveal.js/css/reveal.scss';
+
+/**
+ * Theme based on black theme for reveal.js.
+ */
+
+// Default mixins and settings -----------------
+@import '~reveal.js/css/theme/template/mixins';
+@import '~reveal.js/css/theme/template/settings';
+
+// ---------------------------------------------
+$mainColor: #222;
+$lightGray: #ccc;
+
+$backgroundColor: radial-gradient(transparent 0%, $lightGray 100%);
+
+$headingColor: #222;
+$mainFontSize: 42px;
+$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
+$headingTextShadow: 2px 3px 3px $lightGray;
+
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 600;
+$linkColor: #ec1e24;
+$linkColorHover: lighten( $linkColor, 15%);
+$selectionBackgroundColor: lighten( $linkColor, 25%);
+$heading1Size: 2.5em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+section.has-light-background {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: #222;
+  }
+}
+
+
+section.has-dark-background {
+  &,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $linkColor !important;
+  }
+}
+
+
+// Theme template ------------------------------
+@import '~reveal.js/css/theme/template/theme';
+
+// ---------------------------------------------

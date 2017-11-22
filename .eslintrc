@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  // "parserOptions": {
+  //   "allowImportExportEverywhere": true
+  // },
+  "extends": "airbnb",
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "import/no-extraneous-dependencies": ["error", {
+      "devDependencies": [
+        "conf/**",
+        "webpack*"
+      ],
+      "optionalDependencies": false
+      }
+    ],
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ]
+  }
+}
