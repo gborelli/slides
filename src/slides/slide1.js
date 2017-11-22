@@ -8,7 +8,7 @@ export default () => (
         <li>Animazioni</li>
         <li>Drag and drop</li>
         <li>Ajax</li>
-        <li>Mnipolazione del DOM</li>
+        <li>Manipolazione del DOM</li>
         <li>Unit test</li>
       </ul>
     </section>
