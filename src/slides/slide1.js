@@ -2,29 +2,21 @@ import React from 'react';
 
 export default () => (
   <section>
-    <section>
-      <h1>JS nel 2005</h1>
+    <section className="has-dark-background">
+      <h2>What?</h2>
       <ul>
-        <li>Animazioni</li>
-        <li>Drag and drop</li>
-        <li>Ajax</li>
-        <li>Manipolazione del DOM</li>
-        <li>Unit test</li>
+        <li className="fragment">#1</li>
+        <li className="fragment">#2</li>
+        <li className="fragment">#3</li>
       </ul>
     </section>
     <section>
-      <h2>Frameworks</h2>
+      <h3>When?</h3>
       <ol>
-        <li>Prototype - 2005</li>
-        <li>Dojo toolkit - 2005</li>
-        <li>Scriptaculous - 2006</li>
-        <li>JQuery - 2006 (1.7.x 2009 - 2.0 2013)</li>
+        <li>100 a.D.</li>
+        <li>1000 a.D.</li>
+        <li>2000 a.D.</li>
       </ol>
-
-      <p>
-        <a href="/scriptaculous">Scriptaculous demo.</a><br />
-        <a href="/calendar">JQuery Fullcalendar demo.</a>
-      </p>
 
     </section>
   </section>

@@ -9,54 +9,84 @@
 @import '~reveal.js/css/theme/template/settings';
 
 // ---------------------------------------------
-$mainColor: #222;
-$lightGray: #ccc;
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,700,300italic,700italic);
+// Colors used in the theme
+$blood: #ec1e24;
+$black: #000;
+$coal: $black; // #222
+$black: #000;
+$codeBackground: #23241f;
+$backgroundColor: $coal;
 
-$backgroundColor: radial-gradient(transparent 0%, $lightGray 100%);
-
-$headingColor: #222;
-$mainFontSize: 42px;
-$mainFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingFont: 'Source Sans Pro', Helvetica, sans-serif;
-$headingTextShadow: 2px 3px 3px $lightGray;
-
-$headingLetterSpacing: normal;
-$headingTextTransform: uppercase;
-$headingFontWeight: 600;
-$linkColor: #ec1e24;
-$linkColorHover: lighten( $linkColor, 15%);
-$selectionBackgroundColor: lighten( $linkColor, 25%);
-$heading1Size: 2.5em;
-$heading2Size: 1.6em;
-$heading3Size: 1.3em;
-$heading4Size: 1.0em;
-section.has-light-background {
-  &,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: #222;
-  }
-}
+$headingTextTransform: none;
 
 
-section.has-dark-background {
-  &,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    color: $linkColor !important;
-  }
-}
+// Main text
+$mainFont: Arial, Helvetica, 'sans-serif';
+$mainColor: #fff;
+
+// Headings
+$headingFont: 'Arial Narrow', Helvetica, 'sans-serif';
+
+
+$headingTextShadow: 0 1px 1px #222;
+
+// h1 shadow, borrowed humbly from
+// (c) Default theme by Hakim El Hattab
+$heading1TextShadow: none;
+// 0 1px 0 #ccc,
+// 0 2px 0 #c9c9c9,
+// 0 3px 0 #bbb,
+// 0 4px 0 #b9b9b9,
+// 0 5px 0 #aaa,
+// 0 6px 1px rgba(0, 0, 0, .1),
+// 0 0 5px rgba(0, 0, 0, .1),
+// 0 1px 3px rgba(0, 0, 0, .3),
+// 0 3px 5px rgba(0, 0, 0, .2),
+// 0 5px 10px rgba(0, 0, 0, .25),
+// 0 20px 20px rgba(0, 0, 0, .15);
+// Links
+$linkColor: $blood;
+$linkColorHover: lighten( $linkColor, 20%);
+// Text selection
+$selectionBackgroundColor: $blood;
+$selectionColor: #fff;
+
 
 
 // Theme template ------------------------------
 @import '~reveal.js/css/theme/template/theme';
 
 // ---------------------------------------------
+
+
+.reveal {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: 700;
+  }
+
+  h1 {
+    small {
+      display: block;
+    }
+  }
+
+  p {
+    font-weight: 300;
+    text-shadow: 1px 1px $coal;
+    code {
+      background-color: $codeBackground;
+      display: inline-block;
+      border-radius: 7px;
+    }
+  }
+  small code {
+    vertical-align: baseline;
+  }
+}
+
