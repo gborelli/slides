@@ -3,7 +3,15 @@ import ReactDOM from 'react-dom';
 import Reveal from 'reveal.js';
 
 import Intro from './slides/intro';
-import Slide1 from './slides/slide1';
+import What from './slides/what';
+import DOM from './slides/dom';
+import Utils from './slides/utils';
+import Ajax from './slides/ajax';
+import Plugins from './slides/plugins';
+import Events from './slides/events';
+import Wrap from './slides/wrap';
+import Resources from './slides/resources';
+import Why from './slides/why';
 import Thanks from './slides/thanks';
 
 
@@ -15,7 +23,7 @@ class App extends React.Component {
   componentDidMount() {
     Reveal.initialize({
       history: true,
-      transition: 'zoom',
+      transition: 'slide', // slide-in fade-out', // 'zoom ',
       previewLinks: true,
     });
   }
@@ -24,7 +32,15 @@ class App extends React.Component {
     return (
       <div className="slides">
         <Intro />
-        <Slide1 />
+        <What />
+        <Why />
+        <DOM />
+        <Utils />
+        <Events />
+        <Ajax />
+        <Plugins />
+        <Wrap />
+        <Resources />
         <Thanks />
       </div>
     );

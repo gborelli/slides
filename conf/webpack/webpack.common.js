@@ -43,7 +43,7 @@ export default {
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
-        exclude: /node_modules/,
+        exclude: /node_modules\/reveal\.js/,
       },
       {
         test: /\.css$/,

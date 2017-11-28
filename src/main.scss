@@ -1,4 +1,6 @@
 @import '~reveal.js/css/reveal.scss';
+@import '~highlight.js/styles/railscasts.css';
+
 
 /**
  * Theme based on black theme for reveal.js.
@@ -12,6 +14,12 @@
 // Colors used in the theme
 $blood: #ec1e24;
 $black: #000;
+$green: #7d9b4d;
+$blue: DodgerBlue;
+$yellow: #ddbD5a;
+$orange: #dd5539;
+
+
 $coal: $black; // #222
 $black: #000;
 $codeBackground: #23241f;
@@ -46,7 +54,7 @@ $heading1TextShadow: none;
 // 0 20px 20px rgba(0, 0, 0, .15);
 // Links
 $linkColor: $blood;
-$linkColorHover: lighten( $linkColor, 20%);
+$linkColorHover: lighten( $linkColor, 10%);
 // Text selection
 $selectionBackgroundColor: $blood;
 $selectionColor: #fff;
@@ -58,6 +66,15 @@ $selectionColor: #fff;
 
 // ---------------------------------------------
 
+@mixin colorfullfragment ($name, $color) {
+  &.highlight-#{$name} {
+    opacity: 1;
+    visibility: inherit;
+    &.visible {
+      color: $color;
+    }
+  }
+}
 
 .reveal {
   h1,
@@ -87,5 +104,82 @@ $selectionColor: #fff;
   small code {
     vertical-align: baseline;
   }
+
+  .blood {
+    color: $blood !important;
+  }
+
+  .svg-star {
+    fill: $yellow;
+  }
+
+
+  .slides {
+    section {
+      .fragment {
+        &.highlight-blue.visible {
+          color: $blue;
+        }
+        &.highlight-red.visible {
+          color: $blood;
+        }
+        &.highlight-green.visible {
+          color: $green;
+        }
+        &.highlight-green.visible {
+          color: $green;
+        }
+        @include colorfullfragment(yellow, $yellow);
+        @include colorfullfragment(orange, $orange);
+
+      }
+    }
+  }
+
+  .code-comparison {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    pre {
+      width: 45%;
+      font-size: 40%;
+      background-color: #232323;
+      padding: 1em .5em;
+    }
+  }
+
 }
 
+.plugins {
+  position: relative;
+  .slide-body {
+    z-index: 2;
+    position: relative;
+  }
+  .yin-yang {
+    z-index: 1;
+    position: relative;
+  }
+}
+
+.yin-yang {
+  svg {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+  }
+  .ra {
+    fill: $blood;
+    right: 200px;
+  }
+  .empire {
+    fill: lighten( $black, 20%);
+    left: 200px;
+  }
+
+
+}
