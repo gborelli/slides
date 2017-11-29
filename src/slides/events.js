@@ -3,7 +3,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-const EventSlide () => (
+const EventSlide = () => (
   <section>
     <section>
       <h3>Handling events.</h3>

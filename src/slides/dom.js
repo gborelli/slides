@@ -4,7 +4,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-const DOMSlide  () => (
+const DOMSlide = () => (
   <section>
     <section>
       <h2>DOM</h2>
@@ -99,7 +99,7 @@ const DOMSlide  () => (
           {'$(el).attr(\'tabindex\', 3);'}
         </Code>
 
-        <Code>{'el.getAttribute(\'tabindex\', 3);'}
+        <Code>{'el.setAttribute(\'tabindex\', 3);'}
         </Code>
       </div>
 

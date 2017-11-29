@@ -3,7 +3,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-const AjaxSlide () => (
+const AjaxSlide = () => (
   <section>
     <section>
       <h2>Ajax.</h2>

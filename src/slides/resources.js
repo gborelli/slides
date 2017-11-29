@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ResourceSlide () => (
+const ResourceSlide = () => (
   <section>
     <h2>Resources.</h2>
     <p>

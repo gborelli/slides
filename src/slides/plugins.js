@@ -3,7 +3,7 @@ import Level from '../components/level';
 import YinYang from '../components/yinyang';
 
 
-const PluginSlide () => (
+const PluginSlide = () => (
   <section>
     <div className="plugins">
       <YinYang />

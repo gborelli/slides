@@ -3,7 +3,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-const UtilSlide () => (
+const UtilSlide = () => (
   <section>
     <section>
       <h2>Utilities.</h2>
