@@ -3,7 +3,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-export default () => (
+const WrapSlide () => (
   <section>
     <h2>Wrap it up, please.</h2>
     <Level num={3} />
@@ -24,3 +24,5 @@ export default () => (
 
   </section>
 );
+
+export default WrapSlide;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const ResourceSlide () => (
   <section>
     <h2>Resources.</h2>
     <p>
@@ -11,3 +11,5 @@ export default () => (
     </p>
   </section>
 );
+
+export default ResourceSlide;

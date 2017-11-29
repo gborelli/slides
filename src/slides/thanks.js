@@ -2,7 +2,7 @@ import React from 'react';
 
 const slidesUrl = 'https://github.com/gborelli/slides/tree/nojquery';
 
-export default () => (
+const ThankSlide () => (
   <section>
     <h1>Grazie.</h1>
     <p><small>@Giorgio</small></p>
@@ -11,3 +11,5 @@ export default () => (
   </section>
 );
 
+
+export default ThankSlide;

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 import SyntaxHighlighter, { registerLanguage } from 'react-syntax-highlighter/light';
 import js from 'react-syntax-highlighter/languages/hljs/javascript';
-import { railscasts } from 'react-syntax-highlighter/styles/hljs';
+import railscasts from 'react-syntax-highlighter/styles/hljs/railscasts';
 
 
 registerLanguage('javascript', js);

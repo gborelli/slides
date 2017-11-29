@@ -3,7 +3,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-export default () => (
+const AjaxSlide () => (
   <section>
     <section>
       <h2>Ajax.</h2>
@@ -64,3 +64,5 @@ request.send();`}
 
   </section>
 );
+
+export default AjaxSlide;

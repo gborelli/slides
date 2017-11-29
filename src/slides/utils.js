@@ -3,7 +3,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-export default () => (
+const UtilSlide () => (
   <section>
     <section>
       <h2>Utilities.</h2>
@@ -166,3 +166,5 @@ $.extend(true, {}, objA, objB);`}
 
   </section>
 );
+
+export default UtilSlide;

@@ -4,7 +4,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-export default () => (
+const DOMSlide  () => (
   <section>
     <section>
       <h2>DOM</h2>
@@ -265,3 +265,5 @@ $(el).html('<h2>my title</h2>');`}
 
   </section>
 );
+
+export default DOMSlide;

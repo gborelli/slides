@@ -3,7 +3,7 @@ import Level from '../components/level';
 import YinYang from '../components/yinyang';
 
 
-export default () => (
+const PluginSlide () => (
   <section>
     <div className="plugins">
       <YinYang />
@@ -14,3 +14,5 @@ export default () => (
     </div>
   </section>
 );
+
+export default PluginSlide;

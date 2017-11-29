@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default () => (
+const WhySlide = () => (
   <section data-transition="zoom-in fade-out">
     <h2>Why?</h2>
     <ul>
@@ -10,3 +10,5 @@ export default () => (
     </ul>
   </section>
 );
+
+export default WhySlide;

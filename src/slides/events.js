@@ -3,7 +3,7 @@ import Level from '../components/level';
 import Code from '../components/code';
 
 
-export default () => (
+const EventSlide () => (
   <section>
     <section>
       <h3>Handling events.</h3>
@@ -41,3 +41,5 @@ export default () => (
 
   </section>
 );
+
+export default EventSlide;
