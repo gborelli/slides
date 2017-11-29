@@ -4,7 +4,8 @@
   "description": "Start..",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && webpack -p --progress --colors --env.NODE_ENV=production",
+    "build": "npm run clean && webpack -p --colors --env.NODE_ENV=production",
+    "monitor": "cross-env monitor=true npm run build",
     "clean": "rimraf build",
     "clean:all": "npm run clean && rimraf node_modules",
     "start": "webpack-dev-server --open --env.NODE_ENV=development"
@@ -16,8 +17,8 @@
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
-    "react-highlight": "^0.10.0",
     "react-icons": "^2.2.7",
+    "react-syntax-highlighter": "^6.0.4",
     "reveal.js": "^3.5.0"
   },
   "devDependencies": {
@@ -28,6 +29,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-3": "^6.24.1",
+    "cross-env": "^5.1.1",
     "css-loader": "^0.28.7",
     "eslint": "^4.11.0",
     "eslint-config-airbnb": "^16.1.0",
@@ -47,6 +49,7 @@
     "url-loader": "^0.6.2",
     "webpack": "^3.8.1",
     "webpack-dev-server": "^2.9.4",
-    "webpack-merge": "^4.1.1"
+    "webpack-merge": "^4.1.1",
+    "webpack-monitor": "^1.0.13"
   }
 }

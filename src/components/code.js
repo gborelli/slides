@@ -1,14 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Highlight from 'react-highlight';
 
+import SyntaxHighlighter, { registerLanguage } from 'react-syntax-highlighter/light';
+import js from 'react-syntax-highlighter/languages/hljs/javascript';
+import { railscasts } from 'react-syntax-highlighter/styles/hljs';
+
+
+registerLanguage('javascript', js);
 
 const Code = (props) => {
   const { language, children } = props;
   return (
-    <Highlight className={language || 'javascript'}>
+    <SyntaxHighlighter language={language || 'javascript'} style={railscasts} >
       {children}
-    </Highlight>
+    </SyntaxHighlighter>
   );
 };
 

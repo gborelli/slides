@@ -1,5 +1,5 @@
 @import '~reveal.js/css/reveal.scss';
-@import '~highlight.js/styles/railscasts.css';
+// @import '~highlight.js/styles/railscasts.css';
 
 
 /**
@@ -126,11 +126,9 @@ $selectionColor: #fff;
         &.highlight-green.visible {
           color: $green;
         }
-        &.highlight-green.visible {
-          color: $green;
-        }
-        @include colorfullfragment(yellow, $yellow);
-        @include colorfullfragment(orange, $orange);
+
+        @include colorfullfragment('orange', $orange);
+        @include colorfullfragment('yellow', $yellow);
 
       }
     }

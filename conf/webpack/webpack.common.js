@@ -28,7 +28,7 @@ export default {
   entry: ENTRYPOINTS,
   output: {
     path: PATH.build,
-    filename: '[name].js',
+    filename: '[name]-[hash:8].js',
     libraryTarget: 'umd',
   },
   devtool: 'source-map',
@@ -43,7 +43,7 @@ export default {
       {
         test: /(\.jsx|\.js)$/,
         loader: 'babel-loader',
-        exclude: /node_modules\/reveal\.js/,
+        exclude: /node_modules/,
       },
       {
         test: /\.css$/,
@@ -96,7 +96,7 @@ export default {
         loader: 'url-loader',
         options: {
           limit: 10000,
-          name: '[name].[ext]',
+          name: '[name]-[hash:8].[ext]',
         },
       },
 
@@ -131,7 +131,7 @@ export default {
     }),
 
     new ExtractTextPlugin({
-      filename: '[name].css',
+      filename: '[name]-[hash:8].css',
       allChunks: true,
     }),
 
