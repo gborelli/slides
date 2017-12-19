@@ -117,7 +117,7 @@ class MyFirstComponent extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: {}
+      data: null
     }
     this.getData = this.getData.bind(this);
   }
@@ -132,9 +132,10 @@ class MyFirstComponent extends Component {
       })
   }
   componentDidMount () {
-    this.getData();
+    if (!this.state.data) {
+      this.getData();
+    }
   }
-
   ...
 }`}
       </Code>
