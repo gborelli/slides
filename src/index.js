@@ -4,14 +4,11 @@ import Reveal from 'reveal.js';
 
 import Intro from './slides/intro';
 import What from './slides/what';
-import DOM from './slides/dom';
-import Utils from './slides/utils';
-import Ajax from './slides/ajax';
-import Plugins from './slides/plugins';
-import Events from './slides/events';
-import Wrap from './slides/wrap';
+import How from './slides/how';
+import Start from './slides/start';
 import Resources from './slides/resources';
-import Why from './slides/why';
+import Tutorial from './slides/tutorial';
+
 import Thanks from './slides/thanks';
 
 
@@ -33,13 +30,9 @@ class App extends React.Component {
       <div className="slides">
         <Intro />
         <What />
-        <Why />
-        <DOM />
-        <Utils />
-        <Events />
-        <Ajax />
-        <Plugins />
-        <Wrap />
+        <How />
+        <Start />
+        <Tutorial />
         <Resources />
         <Thanks />
       </div>

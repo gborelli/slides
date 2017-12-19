@@ -2,7 +2,7 @@ import React from 'react';
 
 const IntroSlide = () => (
   <section>
-    <h1><small>You Might</small> <span className="blood">Not</span> Need jQuery</h1>
+    <h1><span className="blood">ReactJS</span><small>really quick</small> Overview </h1>
   </section>
 );
 

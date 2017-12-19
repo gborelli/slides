@@ -1,6 +1,6 @@
 import React from 'react';
 
-const slidesUrl = 'https://github.com/gborelli/slides/tree/nojquery';
+const slidesUrl = 'https://github.com/gborelli/slides/tree/introReactJS';
 
 const ThankSlide = () => (
   <section>
