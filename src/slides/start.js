@@ -19,8 +19,7 @@ const StartSlide = () => (
         {'npm install -g create-react-app'}
       </Code>
       <Code>
-        {`
-create-react-app my-app
+        {`create-react-app my-app
 cd my-app
 
 npm start

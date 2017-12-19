@@ -48,13 +48,10 @@ export default MyFirstComponent;
     <section>
       <h2>State vs props.</h2>
       <Code>
-        {`
-  <MyFirstComponent value="My value" />
-`}
+        {'<MyFirstComponent value="My value" />'}
       </Code>
       <Code>
-        {`
-class MyFirstComponent extends Component {
+        {`class MyFirstComponent extends Component {
   render() {
     return (
       <div>
