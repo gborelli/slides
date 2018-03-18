@@ -1,5 +1,6 @@
 @import '~reveal.js/css/reveal.scss';
-// @import '~highlight.js/styles/railscasts.css';
+// see: components/code.js
+// @import '~highlight.js/styles/atom-one-light.css';
 
 
 /**
@@ -13,7 +14,7 @@
 // ---------------------------------------------
 // Colors used in the theme
 $blood: #ec1e24;
-$black: #000;
+$black: lighten(#222, 14%);
 $green: #7d9b4d;
 $blue: DodgerBlue;
 $yellow: #ddbD5a;
@@ -21,22 +22,22 @@ $orange: #dd5539;
 
 
 $coal: $black; // #222
-$black: #000;
+
 $codeBackground: #23241f;
-$backgroundColor: $coal;
+$backgroundColor: white;
 
 $headingTextTransform: none;
 
 
 // Main text
 $mainFont: Arial, Helvetica, 'sans-serif';
-$mainColor: #fff;
+$mainColor: $black;
 
 // Headings
 $headingFont: 'Arial Narrow', Helvetica, 'sans-serif';
+$headingColor: lighten($black, 35%);
 
-
-$headingTextShadow: 0 1px 1px #222;
+$headingTextShadow: 0px 1px 1px $black;
 
 // h1 shadow, borrowed humbly from
 // (c) Default theme by Hakim El Hattab
@@ -65,119 +66,24 @@ $selectionColor: #fff;
 @import '~reveal.js/css/theme/template/theme';
 
 // ---------------------------------------------
-
-@mixin colorfullfragment ($name, $color) {
-  &.highlight-#{$name} {
-    opacity: 1;
-    visibility: inherit;
-    &.visible {
-      color: $color;
-    }
-  }
-}
-
 .reveal {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-weight: 700;
+  .blood {
+    color: $blood !important;
   }
-
   h1 {
     small {
       display: block;
     }
   }
-
-  p {
-    font-weight: 300;
-    text-shadow: 1px 1px $coal;
-    code {
-      background-color: $codeBackground;
-      display: inline-block;
-      border-radius: 7px;
+  section.intro {
+    h1 {
+      font-size: $heading1Size - 2em;
     }
-  }
-  small code {
-    vertical-align: baseline;
-  }
-
-  .blood {
-    color: $blood !important;
-  }
-
-  .svg-star {
-    fill: $yellow;
-  }
-
-
-  .slides {
-    section {
-      .fragment {
-        &.highlight-blue.visible {
-          color: $blue;
-        }
-        &.highlight-red.visible {
-          color: $blood;
-        }
-        &.highlight-green.visible {
-          color: $green;
-        }
-
-        @include colorfullfragment('orange', $orange);
-        @include colorfullfragment('yellow', $yellow);
-
-      }
+    img {
+      width: 100%;
     }
-  }
-
-  .code-comparison {
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    pre {
-      width: 45%;
-      font-size: 40%;
-      background-color: #232323;
-      padding: 1em .5em;
-    }
-  }
-
-}
-
-.plugins {
-  position: relative;
-  .slide-body {
-    z-index: 2;
-    position: relative;
-  }
-  .yin-yang {
-    z-index: 1;
-    position: relative;
+  //   background: url('./img/risiko.jpg') no-repeat center center fixed;
+  //   background-size: cover;
   }
 }
 
-.yin-yang {
-  svg {
-    height: 400px;
-    width: 400px;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-  }
-  .ra {
-    fill: $blood;
-    right: 200px;
-  }
-  .empire {
-    fill: lighten( $black, 20%);
-    left: 200px;
-  }
-
-
-}

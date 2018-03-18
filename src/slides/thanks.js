@@ -1,11 +1,12 @@
 import React from 'react';
 
-const slidesUrl = 'https://github.com/gborelli/slides/tree/introReactJS';
+const slidesUrl = 'https://github.com/gborelli/slides/tree/risikoreact';
 
 const ThankSlide = () => (
   <section>
     <h1>Grazie.</h1>
-    <p><small>@Giorgio</small></p>
+    <p><small>giorgio.borelli@abstract.it</small></p>
+    <p><small>@twitter giorgio_001</small></p>
     <p><a href={slidesUrl}>{slidesUrl}</a>
     </p>
   </section>

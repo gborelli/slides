@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import Reveal from 'reveal.js';
 
 import Intro from './slides/intro';
-import What from './slides/what';
-import How from './slides/how';
-import Start from './slides/start';
-import Resources from './slides/resources';
+import Who from './slides/who';
+import Background from './slides/background';
+import TheNewHope from './slides/thenewhope';
+import Redesign from './slides/redesign';
 import Tutorial from './slides/tutorial';
 
 import Thanks from './slides/thanks';
@@ -29,11 +29,10 @@ class App extends React.Component {
     return (
       <div className="slides">
         <Intro />
-        <What />
-        <How />
-        <Start />
-        <Tutorial />
-        <Resources />
+        <Who />
+        <Background />
+        <TheNewHope />
+        <Redesign />
         <Thanks />
       </div>
     );

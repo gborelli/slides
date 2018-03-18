@@ -4,10 +4,10 @@
   "description": "Start..",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && webpack -p --colors --env.NODE_ENV=production",
-    "monitor": "cross-env monitor=true npm run build",
+    "build": "yarn clean && webpack -p --colors --env.NODE_ENV=production",
+    "monitor": "cross-env monitor=true yarn build",
     "clean": "rimraf build",
-    "clean:all": "npm run clean && rimraf node_modules",
+    "clean:all": "yarn clean && rimraf node_modules",
     "start": "webpack-dev-server --open --env.NODE_ENV=development"
   },
   "author": "giorgio",
