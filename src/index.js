@@ -7,10 +7,8 @@ import Who from './slides/who';
 import Background from './slides/background';
 import TheNewHope from './slides/thenewhope';
 import Redesign from './slides/redesign';
-import Tutorial from './slides/tutorial';
 
 import Thanks from './slides/thanks';
-
 
 import './main.scss';
 import '../public/favicon.ico';
