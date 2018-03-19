@@ -17,7 +17,7 @@ const RedesignSlide = () => (
       </ul>
     </section>
     <section>
-      <h2>Headless</h2>
+      <h2 className="blood">Headless</h2>
       <img className="stretch" src={Lego} alt="lego headless" />
     </section>
     <section>
@@ -31,7 +31,7 @@ const RedesignSlide = () => (
     </section>
 
     <section>
-      <h2 >Real life</h2>
+      <h2 className="blood">Real life</h2>
       <img className="stretch" src={Lego2} alt="lego headless knight" />
     </section>
 

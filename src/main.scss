@@ -131,6 +131,16 @@ $selectionColor: #fff;
     }
   }
 
+  .credits {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    p {
+      text-align: left;
+      font-size: 80%;
+    }
+
+  }
 
 }
 
