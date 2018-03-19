@@ -1,5 +1,6 @@
 import React from 'react';
 import abstractLogo from '../img/abstract_logo.png';
+
 const slidesUrl = 'https://risikoreactjs.netlify.com';
 
 const ThankSlide = () => (
@@ -8,7 +9,7 @@ const ThankSlide = () => (
     <div className="credits">
       <img src={abstractLogo} alt="abstract" />
       <p>
-        @twitter giorgio_001<br/>
+        @twitter giorgio_001<br />
         giorgio.borelli@abstract.it
       </p>
     </div>
