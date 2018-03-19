@@ -1,5 +1,5 @@
 const path = require('path');
-const copy = require('copy');
+const copy = require('copy'); // eslint-disable-line import/no-extraneous-dependencies
 
 const opts = {
   cwd: path.resolve(__dirname, './'),
