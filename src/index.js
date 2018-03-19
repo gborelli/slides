@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import Reveal from 'reveal.js';
 
 import Intro from './slides/intro';
-import Who from './slides/who';
 import Background from './slides/background';
-import TheNewHope from './slides/thenewhope';
+import ANewHope from './slides/anewhope';
 import Redesign from './slides/redesign';
 
 import Thanks from './slides/thanks';
@@ -27,9 +26,8 @@ class App extends React.Component {
     return (
       <div className="slides">
         <Intro />
-        <Who />
         <Background />
-        <TheNewHope />
+        <ANewHope />
         <Redesign />
         <Thanks />
       </div>

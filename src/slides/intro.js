@@ -7,7 +7,7 @@ const IntroSlide = () => (
       <span className="blood">Risiko ReactJS</span>
       <small>strategie d’invasione.</small>
     </h1>
-    <img src={risiko} alt="Risiko ReactJS" />
+    <img src={risiko} className="stretch" alt="Risiko ReactJS" />
   </section>
 );
 

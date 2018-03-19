@@ -66,10 +66,22 @@ $selectionColor: #fff;
 @import '~reveal.js/css/theme/template/theme';
 
 // ---------------------------------------------
+@mixin colorfullfragment ($name, $color) {
+  &.highlight-#{$name} {
+    opacity: 1;
+    visibility: inherit;
+    &.visible {
+      color: $color;
+    }
+  }
+}
+
+
 .reveal {
   .blood {
     color: $blood !important;
   }
+
   h1 {
     small {
       display: block;
@@ -85,5 +97,43 @@ $selectionColor: #fff;
   //   background: url('./img/risiko.jpg') no-repeat center center fixed;
   //   background-size: cover;
   }
+
+  .svg-star {
+    fill: $yellow;
+  }
+
+
+  .code-comparison {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    pre {
+      width: 45%;
+      font-size: 40%;
+      background-color: #232323;
+      padding: 1em .5em;
+    }
+  }
+
+  .slides {
+    section {
+      .fragment {
+        &.highlight-blue.visible {
+          color: $blue;
+        }
+        &.highlight-red.visible {
+          color: $blood;
+        }
+        &.highlight-green.visible {
+          color: $green;
+        }
+
+        @include colorfullfragment('orange', $orange);
+        @include colorfullfragment('yellow', $yellow);
+
+      }
+    }
+  }
+
 }
 
