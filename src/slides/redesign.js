@@ -25,7 +25,7 @@ const RedesignSlide = () => (
       <ul>
         <li>Autonomia del frontend</li>
         <li>Architettura modulare</li>
-        <li>Flessibilità d'integrazione e deploy</li>
+        <li>Flessibilità d&#39;integrazione e deploy</li>
         <li>Distinzione netta competenze ed ambiti software</li>
       </ul>
     </section>
@@ -46,7 +46,6 @@ const RedesignSlide = () => (
     </section>
 
     <section>
-      <h2></h2>
       <img className="stretch" src={Homer} alt="homer" />
     </section>
 
