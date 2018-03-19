@@ -6,6 +6,7 @@ import Intro from './slides/intro';
 import Background from './slides/background';
 import ANewHope from './slides/anewhope';
 import Redesign from './slides/redesign';
+import Architecture from './slides/architecture';
 
 import Thanks from './slides/thanks';
 
@@ -29,6 +30,7 @@ class App extends React.Component {
         <Background />
         <ANewHope />
         <Redesign />
+        <Architecture />
         <Thanks />
       </div>
     );

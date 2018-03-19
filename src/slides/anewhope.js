@@ -7,11 +7,11 @@ const NewHopeSlide = () => (
   <section>
     <section data-background-image={ANHope} data-background-size="25%" />
     <section>
-      <h2>Qualcosa si muove.</h2>
+      <h2 className="blood">Qualcosa si muove.</h2>
       <ul>
         <li>Piccolo team front-end interno.</li>
+        <li>Fornisce le linee guida sul frontend.</li>
         <li>Risolve problemi al volo.</li>
-        <li >Fornisce le linee guida sul frontend.</li>
         <li className="fragment blood">E nel tempo libero, si diverte con il refactoring.</li>
       </ul>
     </section>

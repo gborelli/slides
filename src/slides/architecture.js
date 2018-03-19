@@ -5,11 +5,10 @@ const ArchitectureSlide = () => (
     <section>
       Architecture
     </section>
-    <section>
-      New architecture
+    {/* <section>
       Gruppi d&apos;ascolto
-      Challenge - comprehension / skills / capacitys
-    </section>
+      Challenge - comprehension / skills / capacity
+    </section> */}
 
   </section>
 );
