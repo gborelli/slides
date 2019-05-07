@@ -11,9 +11,9 @@ const RedesignSlide = () => (
     <section>
       <h2 className="blood">Web site redesign &amp;&amp; CMS</h2>
       <ul>
-        <li>Progetti molto importanti</li>
-        <li>L&#39;architettura software si complica</li>
-        <li>Agenzia propone ReactJS</li>
+        <li>Progetto molto importante</li>
+        <li>Necessità di rinnovamento tecnologico (Be/Fe)</li>
+        <li>Viene proposto ReactJS</li>
       </ul>
     </section>
     <section>
@@ -39,9 +39,9 @@ const RedesignSlide = () => (
       <h2 className="blood">Issues</h2>
       <ul>
         <li>Politica e ownership</li>
-        <li>Comprensione e fiducia</li>
+        <li>Comprensione e fiducia nella tecnologia</li>
         <li>Competenze tecniche</li>
-        <li>Disponibilità di risorse</li>
+        <li>Disponibilità di risorse nell&apos;immediato</li>
       </ul>
     </section>
 

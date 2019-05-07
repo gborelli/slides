@@ -11,8 +11,9 @@ const ArchitectureSlide = () => (
       <h2 className="blood">&lt;footer&gt;</h2>
       <p className="blood">Data layer</p>
       <ul>
-        <li>E-commerce | Java + Rest API |</li>
-        <li>CMS | Java + Rest API |</li>
+        <li>E-commerce | Java + Rest API</li>
+        <li>CMS | Java + Rest API</li>
+        <li>SOLR | Java + Rest API</li>
       </ul>
     </section>
     <section>
@@ -30,12 +31,12 @@ const ArchitectureSlide = () => (
       <p className="blood">UI layer</p>
       <ul>
         <li>React JS</li>
-        <li>ES6</li>
+        <li>ES6 || Typescript</li>
         <li>Apollo Graphql</li>
         <li>Redux</li>
-        <li>CSS modules &amp;&amp; Postcss</li>
+        <li>CSS modules || Styled Components</li>
         <li>Storybook</li>
-        <li>Jest &amp;&amp; BrowserStack</li>
+        <li>Jest/Enzyme</li>
       </ul>
     </section>
     <section>

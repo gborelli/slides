@@ -8,6 +8,9 @@ import ANewHope from './slides/anewhope';
 import Redesign from './slides/redesign';
 import Architecture from './slides/architecture';
 
+import SmartShoppers from './slides/smartshoppers';
+import WhatWeLearnt from './slides/whatwelearnt';
+
 import Thanks from './slides/thanks';
 
 import './main.scss';
@@ -30,7 +33,9 @@ class App extends React.Component {
         <Background />
         <ANewHope />
         <Redesign />
+        <SmartShoppers />
         <Architecture />
+        <WhatWeLearnt />
         <Thanks />
       </div>
     );
