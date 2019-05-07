@@ -6,7 +6,7 @@ const SmartShoppers = () => (
       <h2 className="blood">Smart shopper</h2>
     </section>
     <section>
-      <h2 className="blood">Applicazioni Web per gli store fisici.</h2>
+      <h2 className="blood">Applicazioni Web per negozi fisici.</h2>
       <p>AKA: Applicazioni a supporto della vendita tradizionale</p>
       <p> Catalogo + E-commerce </p>
     </section>

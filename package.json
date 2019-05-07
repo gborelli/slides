@@ -9,12 +9,14 @@
     "monitor": "cross-env monitor=true yarn build",
     "clean": "rimraf build",
     "clean:all": "yarn clean && rimraf node_modules",
-    "start": "webpack-dev-server --open --env.NODE_ENV=development"
+    "start": "webpack-dev-server --open --env.NODE_ENV=development",
+    "deploy": "gh-pages -d build"
   },
   "author": "giorgio",
   "license": "ISC",
   "browserslist": "last 4 versions, ie 11",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
